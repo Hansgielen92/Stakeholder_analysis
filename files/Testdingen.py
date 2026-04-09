@@ -1,32 +1,8 @@
 {
  "cells": [
   {
-   "cell_type": "markdown",
-   "id": "72827848-0093-4996-a36f-23c50579cbae",
-   "metadata": {},
-   "source": [
-    "Docs:<br>\n",
-    "- [ReportLab Docs](https://docs.reportlab.com/reportlab/userguide/ch1_intro/)\n",
-    "- [StreamLit Gallery - voor ophalen van data](https://streamlit.io/gallery)\n",
-    "\n",
-    "<br>\n",
-    "\n",
-    "Basisdingen:\n",
-    "[How to iterate over all or certain columns of a df](https://www.geeksforgeeks.org/python/loop-or-iterate-over-all-or-certain-columns-of-a-dataframe-in-python-pandas/) \n",
-    "<br>\n",
-    "Om naar te kijken: <br>\n",
-    "-  [Google resultaten concepts](https://www.google.com/search?q=app+pc+for+brainstorming+with+drawing+tablet&num=10&sca_esv=9151e0e90600ee3c&sxsrf=ANbL-n7LjWhKl-hEHRYIRnvv6TYRhGIzTA%3A1774340841409&ei=6UrCaenXGMqLi-gPo-_UgAM&biw=1712&bih=1326&ved=0ahUKEwip8L_cjriTAxXKxQIHHaM3FTAQ4dUDCBE&uact=5&oq=app+pc+for+brainstorming+with+drawing+tablet&gs_lp=Egxnd3Mtd2l6LXNlcnAiLGFwcCBwYyBmb3IgYnJhaW5zdG9ybWluZyB3aXRoIGRyYXdpbmcgdGFibGV0MgUQIRigATIFECEYoAEyBRAhGKABSMY-UABY1j1wBngBkAEAmAFwoAGwHaoBBDQ5LjG4AQPIAQD4AQGYAjigArUfwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICBRAAGIAEwgILEC4YgAQY0QMYxwHCAgUQLhiABMICBhAAGBYYHsICBxAAGIAEGA3CAgYQABgNGB7CAgsQABiABBiGAxiKBcICBRAAGO8FwgIIEAAYgAQYogTCAgcQIRigARgKwgIFECEYnwXCAgQQIRgVmAMAkgcENTQuMqAH3JsCsgcENDguMrgHkh_CBwkwLjI5LjI2LjHIB6EBgAgA&sclient=gws-wiz-serp)\n",
-    "<br>\n",
-    "\n",
-    "Aantekeningen:\n",
-    "<br>\n",
-    "\n",
-    "Hoe zorg ik dat ik meerdere inputs df's kan verwerken in één uiteindelijke score?\n"
-   ]
-  },
-  {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 2,
    "id": "357393d8-5b21-4d91-84a2-b9546f5f3046",
    "metadata": {},
    "outputs": [],
@@ -44,7 +20,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": 3,
    "id": "897f8001",
    "metadata": {},
    "outputs": [
@@ -68,7 +44,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 4,
    "id": "178f0380",
    "metadata": {},
    "outputs": [],
@@ -107,7 +83,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 5,
    "id": "876e8c8d",
    "metadata": {},
    "outputs": [],
@@ -117,7 +93,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 6,
    "id": "09063951",
    "metadata": {},
    "outputs": [
@@ -125,7 +101,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "cwd= /Users/HGielen\n",
+      "cwd= /Users/HGielen/Coding/GitHub/Stakeholder_analysis/files\n",
       "False\n"
      ]
     }
@@ -138,7 +114,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 7,
    "id": "9730c8ea-1562-4c5f-b4a3-bf54d3e402ce",
    "metadata": {},
    "outputs": [],
@@ -153,7 +129,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 8,
    "id": "ee3efaa7-6b6f-4d85-84c0-e54b7fdaa5b6",
    "metadata": {},
    "outputs": [],
@@ -171,7 +147,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 9,
    "id": "e8973d48-c849-41f2-acd1-0746df78deaa",
    "metadata": {},
    "outputs": [],
@@ -185,7 +161,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 10,
    "id": "6162ec2d-91e8-4796-9f80-d476d320dc25",
    "metadata": {},
    "outputs": [],
@@ -198,7 +174,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 11,
    "id": "05b4650b",
    "metadata": {},
    "outputs": [],
@@ -230,7 +206,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 12,
    "id": "72881252",
    "metadata": {},
    "outputs": [
@@ -241,8 +217,8 @@
      "traceback": [
       "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
       "\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)",
-      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[11]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m create_power_interest_columns(df)\n\u001b[32m      2\u001b[39m df[\u001b[33m'\u001b[39m\u001b[33mstrategy\u001b[39m\u001b[33m'\u001b[39m] = df.apply(\u001b[38;5;28;01mlambda\u001b[39;00m row: get_strategy(row[\u001b[33m'\u001b[39m\u001b[33mpower_scores\u001b[39m\u001b[33m'\u001b[39m], row[\u001b[33m'\u001b[39m\u001b[33minterest\u001b[39m\u001b[33m'\u001b[39m]), axis=\u001b[32m1\u001b[39m)\n\u001b[32m      5\u001b[39m \u001b[38;5;28;01mfor\u001b[39;00m i, row \u001b[38;5;129;01min\u001b[39;00m df.iterrows():\n",
-      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[9]\u001b[39m\u001b[32m, line 3\u001b[39m, in \u001b[36mcreate_power_interest_columns\u001b[39m\u001b[34m(dataFrame)\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34mcreate_power_interest_columns\u001b[39m(dataFrame):\n\u001b[32m      2\u001b[39m     power_columns = [\u001b[33m'\u001b[39m\u001b[33mformeel\u001b[39m\u001b[33m'\u001b[39m, \u001b[33m'\u001b[39m\u001b[33minformatie\u001b[39m\u001b[33m'\u001b[39m, \u001b[33m'\u001b[39m\u001b[33minformeel\u001b[39m\u001b[33m'\u001b[39m,\u001b[33m'\u001b[39m\u001b[33mlegitimiteit\u001b[39m\u001b[33m'\u001b[39m]\n\u001b[32m----> \u001b[39m\u001b[32m3\u001b[39m     dataFrame[\u001b[33m'\u001b[39m\u001b[33mpower_scores\u001b[39m\u001b[33m'\u001b[39m] = dataFrame[power_columns].mean(axis=\u001b[32m1\u001b[39m)\n\u001b[32m      4\u001b[39m     dataFrame[\u001b[33m'\u001b[39m\u001b[33minterest\u001b[39m\u001b[33m'\u001b[39m] = dataFrame[\u001b[33m'\u001b[39m\u001b[33mbetrokkenheid\u001b[39m\u001b[33m'\u001b[39m]\n",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[12]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m create_power_interest_columns(df)\n\u001b[32m      2\u001b[39m df[\u001b[33m'\u001b[39m\u001b[33mstrategy\u001b[39m\u001b[33m'\u001b[39m] = df.apply(\u001b[38;5;28;01mlambda\u001b[39;00m row: get_strategy(row[\u001b[33m'\u001b[39m\u001b[33mpower_scores\u001b[39m\u001b[33m'\u001b[39m], row[\u001b[33m'\u001b[39m\u001b[33minterest\u001b[39m\u001b[33m'\u001b[39m]), axis=\u001b[32m1\u001b[39m)\n\u001b[32m      5\u001b[39m \u001b[38;5;28;01mfor\u001b[39;00m i, row \u001b[38;5;129;01min\u001b[39;00m df.iterrows():\n",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[10]\u001b[39m\u001b[32m, line 3\u001b[39m, in \u001b[36mcreate_power_interest_columns\u001b[39m\u001b[34m(dataFrame)\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34mcreate_power_interest_columns\u001b[39m(dataFrame):\n\u001b[32m      2\u001b[39m     power_columns = [\u001b[33m'\u001b[39m\u001b[33mformeel\u001b[39m\u001b[33m'\u001b[39m, \u001b[33m'\u001b[39m\u001b[33minformatie\u001b[39m\u001b[33m'\u001b[39m, \u001b[33m'\u001b[39m\u001b[33minformeel\u001b[39m\u001b[33m'\u001b[39m,\u001b[33m'\u001b[39m\u001b[33mlegitimiteit\u001b[39m\u001b[33m'\u001b[39m]\n\u001b[32m----> \u001b[39m\u001b[32m3\u001b[39m     dataFrame[\u001b[33m'\u001b[39m\u001b[33mpower_scores\u001b[39m\u001b[33m'\u001b[39m] = dataFrame[power_columns].mean(axis=\u001b[32m1\u001b[39m)\n\u001b[32m      4\u001b[39m     dataFrame[\u001b[33m'\u001b[39m\u001b[33minterest\u001b[39m\u001b[33m'\u001b[39m] = dataFrame[\u001b[33m'\u001b[39m\u001b[33mbetrokkenheid\u001b[39m\u001b[33m'\u001b[39m]\n",
       "\u001b[31mTypeError\u001b[39m: 'FileNotFoundError' object is not subscriptable"
      ]
     }
@@ -261,37 +237,19 @@
    "execution_count": null,
    "id": "b10ddf44-f965-4de1-825d-226509964e2f",
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "File location: C:\\Users\\hans_\\AppData\\Local\\Temp\\tmprre3lxb5.png\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "C:\\Users\\hans_\\AppData\\Local\\Temp\\ipykernel_12180\\1052847246.py:19: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown\n",
-      "  plt.show()\n"
-     ]
-    },
-    {
-     "data": {
-      "text/plain": [
-       "'C:\\\\Users\\\\hans_\\\\AppData\\\\Local\\\\Temp\\\\tmprre3lxb5.png'"
-      ]
-     },
-     "execution_count": 31,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "#Plot stakeholders op kaart\n",
     "create_matrix_plot(df)\n"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0a60b617-1557-4c8a-8e38-3790dd729f30",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
