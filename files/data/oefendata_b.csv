@@ -1,5 +1,6 @@
 stakeholder,formeel,reward_power,coercive,expert,informational,pragmatic,moral,urgency,active
-stakeholder A,1,3,1,2,2,3,1,2,1
+stakeholder A,
+1,3,1,2,2,3,1,2,1
 Stakeholder B,5,5,3,3,4,3,2,3,4
 Stakeholder C,2,2,1,1,2,1,1,2,1
 Stakeholder D,5,4,4,4,2,2,5,2,5
