@@ -9,12 +9,16 @@ import os
 import glob
 import skfuzzy as fuzz
 
+base_path = Path.cwd() #Path.cwd() geeft de huidige werkmap terug. Base_path is die map plus de mapnaam
+print(f"The path is: {base_path}")
+
 def calculate_profile_score(df, attribute_prefix):
    return (df[f'{attribute_prefix}_min'] + 2 * df[f'{attribute_prefix}_mean'] + df[f'{attribute_prefix}_max']) / 4
   
 
-def fuzzy_synthesize(folder_name = 'data_2'):
-   base_path = Path.cwd()/folder_name #Path.cwd() geeft de huidige werkmap terug. Base_path is die map plus de mapnaam
+def fuzzy_synthesize(folder_name = 'data_demo'):
+   script_dir = Path(__file__).resolve().parent
+   base_path = script_dir[1]/folder_name #Path.cwd() geeft de huidige werkmap terug. Base_path is die map plus de mapnaam
    pattern = '*.csv'
    csv_files = list(base_path.glob(pattern))
 
@@ -88,3 +92,53 @@ ATTRIBUTE_CONFIG = {
 
 df = fuzzy_synthesize()
 
+#Creëren van Universele sets voor de attributen
+
+x_power = np.arange(0,3.1,0.1)
+x_legitimacy = np.arange(0,3.1,0.1)
+x_urgency = np.arange(0,3.1,0.1)
+x_salience = np.arange(0,3.1,0.1)
+
+#Maken van fuzzy membershipfuncties voor elk attribuut
+
+power_low = fuzz.trapmf(x_power, list(ATTRIBUTE_CONFIG['power']['Low']))
+power_high = fuzz.trapmf(x_power, list(ATTRIBUTE_CONFIG['power']['High']))
+legitimacy_low = fuzz.trapmf(x_legitimacy, list(ATTRIBUTE_CONFIG['legitimacy']['Absent']))
+legitimacy_high = fuzz.trapmf(x_legitimacy, list(ATTRIBUTE_CONFIG['legitimacy']['Present']))
+urgency_low = fuzz.trapmf(x_urgency, list(ATTRIBUTE_CONFIG['urgency']['Low']))
+urgency_high = fuzz.trapmf(x_urgency, list(ATTRIBUTE_CONFIG['urgency']['High']))
+salience_none = fuzz.trapmf(x_salience, list(ATTRIBUTE_CONFIG['salience']['None']))
+salience_low = fuzz.trapmf(x_salience, list(ATTRIBUTE_CONFIG['salience']['Low']))
+salience_moderate = fuzz.trapmf(x_salience, list(ATTRIBUTE_CONFIG['salience']['Moderate']))
+salience_high = fuzz.trapmf(x_salience, list(ATTRIBUTE_CONFIG['salience']['High']))
+
+#plotten van de membershipfuncties
+fig, (ax0, ax1, ax2, ax3) = plt.subplots(nrows=4, figsize=(8, 9))
+ax0.plot(x_power, power_low, 'b', linewidth=1.5, label='Low')
+ax0.plot(x_power, power_high, 'g', linewidth=1.5, label='High')
+
+ax0.set_title('Power')
+ax0.legend()
+
+ax1.plot(x_legitimacy, legitimacy_low, 'b', linewidth=1.5, label='Absent')
+ax1.plot(x_legitimacy, legitimacy_high, 'g', linewidth=1.5, label='Present')
+
+ax1.set_title('Legitimacy')
+ax1.legend()
+
+ax2.plot(x_urgency, urgency_low, 'b', linewidth=1.5, label='Low')
+ax2.plot(x_urgency, urgency_high, 'g', linewidth=1.5, label='High')
+
+ax2.set_title('Urgency')
+ax2.legend()
+
+ax3.plot(x_salience, salience_low, 'b', linewidth=1.5, label='Low')
+ax3.plot(x_salience, salience_moderate, 'y', linewidth=1.5, label='Moderate')
+ax3.plot(x_salience, salience_high, 'g', linewidth=1.5, label='High')
+
+ax3.set_title('Salience')
+ax3.legend()
+
+plt.tight_layout()
+plt.savefig('output.png', dpi=150, bbox_inches='tight')
+plt.close()
